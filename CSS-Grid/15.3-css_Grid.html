@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 15.3</title>
+    <style>
+
+        .container{
+           display: grid;
+           grid-template-areas: 
+           "header header header"
+           "aside body body "
+           "footer footer footer"
+           ;
+          
+        grid-template-rows: 100px 100px 100px;
+         grid-template-columns: 250px 100px ;
+        }
+
+
+        .container2{
+            display: flex;
+            
+            justify-content: space-between;
+        }
+        .header{
+            grid-area: header;
+           background-color: red;
+           display: flex;
+           justify-content: space-between;
+           margin: 5px;
+        }
+         
+        
+
+        .body{
+            grid-area: body;
+            background-color: green;
+            margin: 5px;
+            width: 800px;
+            margin-left: 
+        }
+
+        .aside{
+            grid-area: aside;
+            background-color:blue;
+            margin: 5px;
+            width: 400px;
+           
+        }
+
+        .aside2{
+            grid-area: aside;
+            background-color:blueviolet;
+            margin: 5px;
+            margin-right: -1010px;
+            width: 420px;
+        }
+
+        .footer{
+            grid-area: footer;
+            margin: 5px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+       
+    </div>
+    <div class="container2">
+    
+    <div class="aside">Aside </div>
+    <div class="body">Body</div>
+    <div class="aside2">aside2</div>
+</div>
+    <div class="footer">Footer</div>
+</div>
+</body>
+</html>
